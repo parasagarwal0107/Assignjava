@@ -3,6 +3,6 @@ package pack;
 /** Interface calc for calculation*/
 interface Calc {
 	
-	void calcSalary();
+	void calcSalary(float basicSalary);
 	
 }

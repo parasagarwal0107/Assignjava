@@ -1,21 +1,19 @@
 package pack;
 
 class Salary extends Calculation {
-	float basicsalary;
+	float basicSalary;
 	int leaves;
 
 	Salary() { // constructor used for initializing the object
-		this.basicsalary = 150000;
+		this.basicSalary = 15000;
 		this.leaves = 15;
 	}
 
 	// Calculation of salary
-	public void calcSalary() {
-
-		float basicSalary;
-		float da = this.basicsalary * 15 / 100;
-		float hra = this.basicsalary * 10 / 100;
-		float gross_sal = this.basicsalary + da + hra;
+	public void calcSalary(float basicSalary) {
+		float da = basicSalary * 15 / 100;
+		float hra = basicSalary * 10 / 100;
+		float gross_sal = basicSalary + da + hra;
 		System.out.println("salary" + gross_sal);
 	}
 
